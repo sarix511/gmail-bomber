@@ -1,0 +1,17 @@
+  "version": 2,
+  "builds": [
+    {
+      "src": "api/otp.py",
+      "src": "api/index.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/otp",
+      "dest": "api/otp.py"
+      "src": "/(.*)",
+      "dest": "api/index.py"
+    }
+  ]
+}
